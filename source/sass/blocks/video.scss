@@ -1,0 +1,13 @@
+.video {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+}
+
+.video__list {
+
+  @include list-reset;
+  width: 407px;
+  display: flex;
+  justify-content: space-between;
+}

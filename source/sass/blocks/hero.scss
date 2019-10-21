@@ -1,0 +1,27 @@
+.hero {
+  height: 530px;
+  background: url("../img/bg-image.png") no-repeat 0 0;
+  background-size: 100% 100%;
+  padding-top: 140px;
+}
+
+.hero__description {
+  font-family: Gilroy-Medium, sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  color: #F8F8F8;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  font-family: Play, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: #FFFFFF;
+  width: 470px;
+  margin-bottom: 100px;
+}

@@ -1,0 +1,30 @@
+.contacts {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url("../img/contacts.png") no-repeat 0 0;
+    width: 13px;
+    height: 17px;
+    top: 4px;
+    left: -25px;
+  }
+}
+
+.contacts__address {
+  font-family: Gilroy-Medium, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  margin: 0 0 5px 0;
+}
+
+.contacts__schedule {
+  font-family: Gilroy-Medium, sans-serif;
+  font-size: 10px;
+  line-height: 16px;
+  color: #BEBEBE;
+  margin: 0 ;
+}
