@@ -1,9 +1,19 @@
-.search {
+.search-section {
   position: relative;
+  min-width: 50px;
+  margin-top: 7px;
+  margin-left: 110px;
+}
+
+.search {
+  position: absolute;
+  display: none;
+  width: 668px;
+  z-index: 1;
+  left: -43px;
 }
 
 .search__input {
-  display: none;
   width: 668px;
   height: 50px;
   background: #F8F8F8;
@@ -37,7 +47,7 @@
   }
 }
 
-.search__button {
+.search-section__button {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -60,3 +70,6 @@
   }
 }
 
+.show-form {
+  display: block;
+}

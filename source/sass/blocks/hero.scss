@@ -2,7 +2,7 @@
   height: 530px;
   background: url("../img/bg-image.png") no-repeat 0 0;
   background-size: 100% 100%;
-  padding-top: 140px;
+  padding-top: 125px;
 }
 
 .hero__description {
@@ -13,6 +13,11 @@
   color: #F8F8F8;
   opacity: 0.6;
   text-transform: uppercase;
+  margin-bottom: 19px;
+}
+
+.hero__container {
+  padding-left: 43px;
 }
 
 .hero__title {
@@ -24,4 +29,5 @@
   color: #FFFFFF;
   width: 470px;
   margin-bottom: 100px;
+  margin-top: 0;
 }

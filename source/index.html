@@ -7,6 +7,7 @@
     <title>Beauty&Clinic</title>
     <link href="https://fonts.googleapis.com/css?family=Play:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -17,12 +18,17 @@
             <a href="#" class="main-logo">
                 <img src="img/logo.png" alt="Beauty&Clinic" class="main-logo__img">
             </a>
-            <form action="#" method="post" class="search">
-                <input type="text" class="search__input" placeholder="Что вы ищите?">
-                <button class="search__button" type="submit">
+            <div class="search-section">
+                <button class="search-section__button search-section__button--js" type="button">
                     <span class="visually-hidden">Найти</span>
                 </button>
-            </form>
+                <form action="#" method="post" class="search">
+                    <input type="text" class="search__input" placeholder="Что вы ищите?">
+                    <button class="search-section__button search__button" type="submit">
+                        <span class="visually-hidden">Найти</span>
+                    </button>
+                </form>
+            </div>
             <div class="contacts">
                 <p class="contacts__address">Киев, ул. Федорова, 4А</p>
                 <p class="contacts__schedule">10:00 - 20:00 без выходных</p>
@@ -37,7 +43,7 @@
                 <a href="tel:+380673556666" class="phone">+38 (067) 355-66-66</a>
                 <a href="#" class="consultation">Заказать звонок</a>
             </div>
-            <a href="#" class="online-recording">Онлайн запись</a>
+            <a href="#" class="online-recording animated infinite pulse delay-6s">Онлайн запись</a>
         </div>
     </section>
     <section class="header__bottom">
@@ -147,7 +153,7 @@
 </header>
 <main>
     <section class="hero">
-        <div class="container-small">
+        <div class="container-small hero__container">
             <p class="hero__description">Косметология</p>
             <h1 class="hero__title">
                 Клиника<br>
@@ -181,6 +187,7 @@
         </div>
     </section>
 </main>
+<script src="js/script.min.js"></script>
 </body>
 
 </html>

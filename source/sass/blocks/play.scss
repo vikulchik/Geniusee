@@ -1,8 +1,7 @@
 .play {
-  width: 163px;
+  width: 169px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding-top: 15px;
 }
 
 .play__text {
@@ -12,6 +11,8 @@
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;
+  margin-left: 20px;
+  margin-top: 27px;
 }
 
 .play__triangle {

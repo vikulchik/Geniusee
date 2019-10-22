@@ -2,11 +2,11 @@
 
   &__container {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
   }
 
   &__top {
-    min-height: 100px;
+    min-height: 98px;
     display: flex;
     align-items: center;
   }
@@ -19,6 +19,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-left: 145px;
+    margin-top: 3px;
   }
 }
 

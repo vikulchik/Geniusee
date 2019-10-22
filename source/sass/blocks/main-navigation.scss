@@ -9,7 +9,7 @@
     width: 376px;
     height: 70px;
     top: 0;
-    left: 104px;
+    left: 132px;
     z-index: 1;
   }
 }
@@ -22,12 +22,13 @@
   min-height: 70px;
   position: relative;
   z-index: 2;
+  padding: 0 64px 0 31px;
 }
 
 .main-navigation__link {
   text-transform: uppercase;
   font-family: Gilroy-Medium, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 16px;
   text-align: center;
   color: #FFFFFF;
@@ -47,7 +48,7 @@
     width: 9px;
     height: 6px;
     top: 50%;
-    right: -22px;
+    right: -24px;
     transform: translateY(-50%);
   }
 }
