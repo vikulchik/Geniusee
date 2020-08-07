@@ -1,4 +1,4 @@
-# Test application for TEPLIN
+# Test application for epicentrk.ua
 
 ## Steps to run the project:
 * Clone this repo
