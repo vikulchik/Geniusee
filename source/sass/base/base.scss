@@ -30,6 +30,10 @@ button {
   cursor: pointer;
 }
 
+ul {
+  @include list-reset;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
