@@ -11,7 +11,6 @@
   &__model {
     font-size: 12px;
     color: $card-color;
-    margin-bottom: 23px;
   }
 
   &__name {
@@ -44,6 +43,31 @@
     span {
       color: #536dfe;
     }
+  }
+
+  &__spec {
+    color: #536dfe;
+    font-size: 13px;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    padding-left: 26px;
+
+    &:after {
+      position: absolute;
+      content: "";
+      background: url("../img/spec-icon.png") no-repeat 0 0;
+      top: 0;
+      left: 0;
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 23px;
   }
 
   @include desktop {

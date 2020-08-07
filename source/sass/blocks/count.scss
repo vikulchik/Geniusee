@@ -18,6 +18,12 @@
     text-align: center;
     margin-left: 9px;
 
+    &:hover,
+    &:active {
+      border-color: #625e5e;
+      transition: .5s;
+    }
+
     @include placeholder {
       color: #403f40;
       font-size: 18px;

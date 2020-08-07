@@ -6,4 +6,10 @@
   border: none;
   padding: 17px 5px;
   box-sizing: border-box;
+
+  &:hover,
+  &:active {
+    background: #394795;
+    transition: .4s;
+  }
 }
