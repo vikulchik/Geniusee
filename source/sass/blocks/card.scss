@@ -1,0 +1,10 @@
+.card {
+  background: url("../img/bg-card.png") no-repeat 0 0;
+  background-size: cover;
+
+  @include desktop {
+    width: 800px;
+    min-height: 600px;
+    margin-top: 48px;
+  }
+}

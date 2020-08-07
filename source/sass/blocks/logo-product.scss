@@ -1,0 +1,17 @@
+.logo-product {
+  width: 185px;
+  height: 53px;
+  background: #272727;
+
+  @include center;
+  margin: auto;
+
+  img {
+    width: 138px;
+    height: 14px;
+  }
+
+  @include desktop {
+    margin: 0;
+  }
+}

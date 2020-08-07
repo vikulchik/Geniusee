@@ -2,192 +2,151 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Beauty&Clinic</title>
-    <link href="https://fonts.googleapis.com/css?family=Play:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Product Card</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-<header class="header">
-    <section class="header__top">
-        <div class="container header__container">
-            <a href="#" class="main-logo">
-                <img src="img/logo.png" alt="Beauty&Clinic" class="main-logo__img">
-            </a>
-            <div class="search-section">
-                <button class="search-section__button search-section__button--js" type="button">
-                    <span class="visually-hidden">Найти</span>
-                </button>
-                <form action="#" method="post" class="search">
-                    <input type="text" class="search__input" placeholder="Что вы ищите?">
-                    <button class="search-section__button search__button" type="submit">
-                        <span class="visually-hidden">Найти</span>
-                    </button>
-                </form>
-            </div>
-            <div class="contacts">
-                <p class="contacts__address">Киев, ул. Федорова, 4А</p>
-                <p class="contacts__schedule">10:00 - 20:00 без выходных</p>
-            </div>
-            <div class="contacts">
-                <p class="contacts__address">Москва, Воздвиженка, 12</p>
-                <p class="contacts__schedule">10:00 - 21:00 без выходных</p>
-            </div>
-            <div class="header__content">
-                <a href="https://www.google.com.ua/maps/place/%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.401699,30.2525095,10z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf4ee15a4505:0x764931d2170146fe!8m2!3d50.4501!4d30.5234?hl=ru"
-                   class="location">Киев</a>
-                <a href="tel:+380673556666" class="phone">+38 (067) 355-66-66</a>
-                <a href="#" class="consultation">Заказать звонок</a>
-            </div>
-            <a href="#" class="online-recording animated infinite pulse delay-6s">Онлайн запись</a>
-        </div>
-    </section>
-    <section class="header__bottom">
-        <div class="container-small">
-            <nav class="main-navigation">
-                <ul class="main-navigation__list">
-                    <li class="main-navigation__item submenu">
-                        <a href="#" class="main-navigation__link">Услуги клиники</a>
-                        <ul class="submenu-list submenu-list--services">
-                            <li class="submenu-list__item">
-                                <a href="#" class="submenu-list__link">Аппаратная косметология</a>
-                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.840088 1L4.84009 5L0.840088 9"/>
-                                </svg>
-                            </li>
-                            <li class="submenu-list__item submenu-first">
-                                <a href="#" class="submenu-list__link">Эстетика по телу</a>
-                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.840088 1L4.84009 5L0.840088 9"/>
-                                </svg>
-                                <ul class="submenu-list submenu-list--body">
-                                    <li class="submenu-list__item submenu-second">
-                                        <a href="#" class="submenu-list__link">Обертывание</a>
-                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.840088 1L4.84009 5L0.840088 9"/>
-                                        </svg>
-                                        <ul class="submenu-list submenu-list--kind">
-                                            <li class="submenu-list__item">
-                                                <a href="#" class="submenu-list__link">Антицеллюлитное термообертывание Ericson "Lipo-Stress"</a>
-                                            </li>
-                                            <li class="submenu-list__item">
-                                                <a href="#" class="submenu-list__link">Антицеллюлитное термообертывание Styx "Gello Gell"</a>
-                                            </li>
-                                            <li class="submenu-list__item">
-                                                <a href="#" class="submenu-list__link">Обертывание Styx "Виски" - пеленание</a>
-                                            </li>
-                                            <li class="submenu-list__item">
-                                                <a href="#" class="submenu-list__link">Обертывание Gerards "Шоколадный восторг"</a>
-                                            </li>
-                                            <li class="submenu-list__item">
-                                                <a href="#" class="submenu-list__link">Пилинг тела Styx</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="submenu-list__item">
-                                        <a href="#" class="submenu-list__link">Массаж</a>
-                                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.840088 1L4.84009 5L0.840088 9"/>
-                                        </svg>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="submenu-list__item">
-                                <a href="#" class="submenu-list__link">Инъекционные процедуры</a>
-                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.840088 1L4.84009 5L0.840088 9"/>
-                                </svg>
-                            </li>
-                            <li class="submenu-list__item">
-                                <a href="#" class="submenu-list__link">Трихология</a>
-                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.840088 1L4.84009 5L0.840088 9"/>
-                                </svg>
-                            </li>
-                            <li class="submenu-list__item">
-                                <a href="#" class="submenu-list__link">Эстетическая косметология</a>
-                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.840088 1L4.84009 5L0.840088 9"/>
-                                </svg>
-                            </li>
-                            <li class="submenu-list__item">
-                                <a href="#" class="submenu-list__link">Диетология</a>
-                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.840088 1L4.84009 5L0.840088 9"/>
-                                </svg>
-                            </li>
-                            <li class="submenu-list__item">
-                                <a href="#" class="submenu-list__link">Дерматология</a>
-                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.840088 1L4.84009 5L0.840088 9"/>
-                                </svg>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="main-navigation__item submenu">
-                        <a href="#" class="main-navigation__link">Имидж-студия</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a href="#" class="main-navigation__link ">Цены</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a href="#" class="main-navigation__link">Отзывы</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a href="#" class="main-navigation__link">Лояльность</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a href="" class="main-navigation__link">Наш блог</a>
-                    </li>
-                    <li class="main-navigation__item submenu">
-                        <a href="#" class="main-navigation__link">О клинике</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </section>
-</header>
-<main>
-    <section class="hero">
-        <div class="container-small hero__container">
-            <p class="hero__description">Косметология</p>
-            <h1 class="hero__title">
-                Клиника<br>
-                Dr.Antonenko Beauty & Clinic
-            </h1>
-            <div class="video">
-                <ul class="video__list">
-                    <li class="video__item">
-                        <img src="img/version-1.png" alt="Версия видео 1" class="video__img">
-                    </li>
-                    <li class="video__item">
-                        <img src="img/version-2.png" alt="Версия видео 2" class="video__img">
-                    </li>
-                    <li class="video__item">
-                        <img src="img/version-3.png" alt="Версия видео 3" class="video__img">
-                    </li>
-                </ul>
-                <div class="play">
-                    <button class="play__button" type="button">
-                        <span class="visually-hidden">Запустить видео</span>
-                        <svg class="play__triangle" width="14" height="19" viewBox="0 0 14 19" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M13.3993 8.48622C14.1432 8.95737 14.1432 10.0426 13.3993 10.5138L1.84206 17.8334C1.04308 18.3394 0 17.7653 0 16.8196L0 2.18042C0 1.23468 1.04308 0.660618 1.84206 1.16664L13.3993 8.48622Z"
-                            />
-                        </svg>
-                    </button>
-                    <p class="play__text">Видео<br> о клинике</p>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
+<div class="wrapper">
+	<a href="#" class="cart" aria-label="Добавить в корзину">
+		<span class="cart__number-of-goods">2</span>
+	</a>
+	<div class="card">
+		<a href="#" class="logo-product" aria-label="sennheiser">
+			<img src="img/sennheiser.png" height="14" width="138" alt="sennheiser">
+		</a>
+		<article class="card-item">
+			<div class="slider ">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/wireless-black.png" alt="Wireless Black" class="card-item__photo slider__img ">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/wireless-black-2.png" alt="Wireless Black" class="card-item__photo slider__img ">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/wireless-black-3.png" alt="Wireless Black" class="card-item__photo slider__img ">
+						</div>
+					</div>
+					<div class="swiper-buttons">
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="card-item__information">
+				<p class="card-item__model">
+					Model:
+					<span>505795</span>
+				</p>
+				<h1 class="card-item__name">
+					<span>MOMENTUM®</span>
+					Wireless Black
+				</h1>
+				<p class="card-item__about">Wireless headphones with integrated microphone</p>
+				<p class="card-item__description">
+					Peak performance with active noise cancelation. Sennheiser's new MOMENTUM Wireless -
+					Closed circumaural headphone featuring <span>Bluetooth®</span> wireless technology and NoiseGard
+					Hybrid active noise cancelation
+				</p>
+				<div class="card-item__rating rating">
+					<p class="rating__buttons">
+						<input type="checkbox" id="rating-1" checked>
+						<label for="rating-1"></label>
+						<input type="checkbox" id="rating-2" checked>
+						<label for="rating-2"></label>
+						<input type="checkbox" id="rating-3" checked>
+						<label for="rating-3"></label>
+						<input type="checkbox" id="rating-4" checked>
+						<label for="rating-4"></label>
+						<input type="checkbox" id="rating-5">
+						<label for="rating-5"></label>
+					</p>
+					<p class="rating__reviews">
+						<span>4.25</span>
+						<a href="#" class="reviews">(153 reviews)</a>
+					</p>
+				</div>
+				<form action="#" method="get" class="choose-product">
+					<div class="choose-product__price">
+						$499.95
+						<p class="choose-product__price-info">Shipping and taxes extra</p>
+					</div>
+					<div class="choose-product__choose-color">
+						<p class="choose-product__text">Choose your colors:</p>
+						<div class="choose-product__block">
+							<button type="button" class="choose-product__button color-black active-choose-button"></button>
+							<button type="button" class="choose-product__button color-grey"></button>
+						</div>
+					</div>
+					<div class="choose-product__count count">
+						<label class="count__label" for="count">Quantity</label>
+						<input type="text" class="count__field" id="count" placeholder="01">
+						<div class="count__buttons">
+							<button type="button" class="count__plus">+</button>
+							<button type="button" class="count__minus" disabled>-</button>
+						</div>
+					</div>
+					<button type="submit" class="button">Add to Cart</button>
+				</form>
+			</div>
+		</article>
+	</div>
+</div>
+<div class="popup-cart">
+	<form action="#" method="get" class="form-cart">
+		<a href="#" class="cart popup-cart__count-product" aria-label="Добавить в корзину">
+			<span class="cart__number-of-goods">2</span>
+		</a>
+		<div class="popup-cart__subtotal">
+			<p>Subtotal (1 item):</p>
+			<span class="popup-cart__total-price">$499.95</span>
+		</div>
+		<article class="product">
+			<button type="button" class="product__delete" aria-label="Удалить товар"></button>
+			<a href="#" class="product__photo">
+				<img src="img/wireless-black.png" alt="MOMENTUM® Wireless Black">
+			</a>
+			<a href="#" class="product__name">MOMENTUM® Wireless Black</a>
+			<span class="product__price">$499.95</span>
+			<div class="count">
+				<input type="text" class="count__field" placeholder="01">
+				<div class="count__buttons">
+					<button type="button" class="count__plus">+</button>
+					<button type="button" class="count__minus" disabled>-</button>
+				</div>
+			</div>
+		</article>
+		<article class="product">
+			<button type="button" class="product__delete" aria-label="Удалить товар"></button>
+			<a href="#" class="product__photo">
+				<img src="img/wireless-black.png" alt="MOMENTUM® Wireless Black">
+			</a>
+			<a href="#" class="product__name">MOMENTUM® Wireless Black</a>
+			<span class="product__price">$499.95</span>
+			<div class="count">
+				<input type="text" class="count__field" placeholder="01">
+				<div class="count__buttons">
+					<button type="button" class="count__plus">+</button>
+					<button type="button" class="count__minus" disabled>-</button>
+				</div>
+			</div>
+		</article>
+		<p class="popup-cart__text">
+			Your order qualifies for FREE Shipping Choose this option at
+			checkout. <br>See details
+		</p>
+		<button class="button popup-cart__button" type="submit">Proceed to checkout</button>
+	</form>
+</div>
+<div class="overlay"></div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/script.min.js"></script>
 </body>
-
 </html>

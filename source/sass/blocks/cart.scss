@@ -1,0 +1,28 @@
+.cart {
+  position: absolute;
+  display: block;
+  background: url("../img/cart.png") no-repeat 0 0;
+  width: 22px;
+  height: 27px;
+  top: 15px;
+  right: 15px;
+
+  &__number-of-goods {
+    position: absolute;
+    top: -8px;
+    right: -9px;
+    font-size: 12px;
+    color: #ffffff;
+    width: 18px;
+    height: 18px;
+    background: #536dfe;
+    border-radius: 50%;
+
+    @include center;
+  }
+
+  @include desktop {
+    top: 80px;
+    right: 80px;
+  }
+}

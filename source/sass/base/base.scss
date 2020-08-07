@@ -12,37 +12,50 @@ body, p {
   margin: 0;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
 a {
   text-decoration: none;
 }
 
-.container {
-  width: 1440px;
-  margin: 0 auto;
-  padding: 0 20px;
+img {
+  width: 100%;
+  height: auto;
 }
 
-.container-small {
-  width: 1200px;
-  margin: 0 auto;
-}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/main-bg.jpg") no-repeat 0 0;
+  background-size: cover;
+  position: relative;
+  padding: 20% 10% 10% 10%;
 
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-button {
-  &:focus {
-    outline: none;
+  @include desktop {
+    padding: 140px 70px 70px 70px;
+    @include center;
   }
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.46);
+  z-index: 4;
+}
+
+.popup-cart {
+  display: none;
+}
+
+.show {
+  display: block;
 }

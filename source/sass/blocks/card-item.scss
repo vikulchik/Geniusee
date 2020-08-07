@@ -1,0 +1,54 @@
+.card-item {
+
+  &__information {
+    padding: 10px;
+
+    @include desktop {
+      width: 320px;
+    }
+  }
+
+  &__model {
+    font-size: 12px;
+    color: $card-color;
+    margin-bottom: 23px;
+  }
+
+  &__name {
+    font-size: 24px;
+    color: $card-color;
+    margin-top: 0;
+    margin-bottom: 28px;
+
+    span {
+      font-size: 29px;
+
+      @include desktop {
+        display: block;
+      }
+    }
+  }
+
+  &__about {
+    font-size: 17px;
+    color: #646b6f;
+    margin-bottom: 35px;
+  }
+
+  &__description {
+    color: $card-color;
+    font-size: 14px;
+    margin-bottom: 35px;
+    line-height: 23px;
+
+    span {
+      color: #536dfe;
+    }
+  }
+
+  @include desktop {
+    display: flex;
+    padding: 0 40px;
+    justify-content: space-between;
+  }
+}

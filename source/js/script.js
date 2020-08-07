@@ -1,13 +1,43 @@
-(function () {
+const cart = document.querySelector('.cart');
+const overlay = document.querySelector('.overlay');
+const popupCart = document.querySelector('.popup-cart');
+const formCart = document.querySelector('.form-cart');
+const escKeyCode = 27;
 
-    var searchSectionButton = document.querySelector(".search-section__button--js");
-    var searchForm = document.querySelector(".search");
+cart.addEventListener('click', e => {
+    e.preventDefault();
+    popupCart.classList.add('show');
+    overlay.classList.add('show');
+});
 
-    searchSectionButton.addEventListener("click", function () {
-        searchForm.classList.add("show-form");
+formCart.addEventListener('submit', e => {
+    e.preventDefault();
+    popupCart.classList.remove('show');
+    overlay.classList.remove('show');
+});
+
+document.addEventListener('keydown', function(e){
+    if(e.keyCode === escKeyCode) {
+        popupCart.classList.remove('show');
+        overlay.classList.remove('show');
+    }
+});
+
+if (overlay) {
+    overlay.addEventListener('click', function (event) {
+        event.preventDefault();
+        overlay.classList.remove('show');
+        popupCart.classList.remove('show');
     });
+}
 
-    searchForm.addEventListener("submit", function () {
-        searchForm.classList.remove("show-form");
-    })
-})();
+new Swiper('.swiper-container', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});

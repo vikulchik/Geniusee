@@ -1,0 +1,50 @@
+.swiper-container {
+  width: 315px;
+}
+
+.swiper-slide {
+  width: 100% !important;
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  margin-top: 0;
+  position: static;
+}
+
+.swiper-buttons {
+  width: 95px;
+  display: flex;
+  justify-content: space-between;
+  margin: 45px auto 0 auto;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: '';
+  background: url("../img/arrow.png") no-repeat 0 0;
+  width: 10px;
+  height: 7px;
+}
+
+.swiper-button-prev:after {
+  transform: rotate(270deg);
+}
+
+.swiper-button-next:after {
+  transform: rotate(-270deg);
+}
+
+.swiper-pagination {
+  position: static;
+}
+
+.swiper-pagination-bullet {
+  width: 18px;
+  height: 3px;
+  border-radius: 0;
+}

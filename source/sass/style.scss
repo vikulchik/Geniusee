@@ -1,15 +1,18 @@
-@import "base/normalize.scss";
-@import "base/fonts.scss";
-@import "base/base.scss";
 @import "abstract/mixins.scss";
+@import "abstract/variables";
+@import "base/base.scss";
 /*------------------------------ Index page ------------------------------*/
 
-@import "blocks/header";
-@import "blocks/search";
-@import "blocks/contacts";
-@import "blocks/online-recording";
-@import "blocks/main-navigation";
-@import "blocks/hero";
-@import "blocks/play";
-@import "blocks/video";
-@import "blocks/submenu-list";
+@import "blocks/cart";
+@import "blocks/card";
+@import "blocks/logo-product";
+@import "blocks/card-item";
+@import "blocks/rating";
+@import "blocks/reviews";
+@import "blocks/choose-product";
+@import "blocks/count";
+@import "blocks/button";
+@import "blocks/slider";
+@import "blocks/swiper";
+@import "blocks/popup-cart";
+@import "blocks/product";
