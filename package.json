@@ -17,6 +17,7 @@
     "autoprefixer": "9.1.x",
     "browser-sync": "2.24.x",
     "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
     "gulp": "4.0.x",
     "gulp-babel": "8.0.0",
     "gulp-concat": "^2.6.1",
@@ -53,7 +54,9 @@
     "editorconfig": "editorconfig-cli",
     "start": "gulp start",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint"
+    "test": "npm run editorconfig && npm run stylelint",
+    "eslint": "./node_modules/.bin/eslint source",
+    "eslint:fix": "./node_modules/.bin/eslint source --fix"
   },
   "version": "15.0.0"
 }
