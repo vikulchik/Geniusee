@@ -10,4 +10,5 @@
 * Препроцессор sass для css
 * Pug для html
 * Gulp
+* eslint для js
 
