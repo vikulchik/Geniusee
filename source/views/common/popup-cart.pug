@@ -1,0 +1,20 @@
+.popup-cart
+    form.form-cart(action='#' method='get')
+        a.cart.popup-cart__count-product(href='#' aria-label='Добавить в корзину')
+            span.cart__number-of-goods 2
+        .popup-cart__subtotal
+            p Subtotal (1 item):
+            span.popup-cart__total-price $499.95
+        ul
+            li.popup-cart__item
+                include product
+                    include count
+            li.popup-cart__item
+                include product
+                    include count
+        p.popup-cart__text
+            | Your order qualifies for FREE Shipping Choose this option at
+            | checkout.
+            br
+            | See details
+        button.button.popup-cart__button(type='submit') Proceed to checkout

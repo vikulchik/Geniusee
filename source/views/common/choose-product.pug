@@ -1,0 +1,11 @@
+form.choose-product(action='#' method='get')
+    .choose-product__price
+        | $499.95
+        p.choose-product__price-info Shipping and taxes extra
+    .choose-product__choose-color
+        p.choose-product__text Choose your colors:
+        .choose-product__block
+            button.choose-product__button.color-black.active-choose-button(type='button')
+            button.choose-product__button.color-grey(type='button')
+    include count.pug
+    button.button(type='submit') Add to Cart

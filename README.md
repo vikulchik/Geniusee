@@ -5,3 +5,9 @@
 * Run npm install
 * Run npm run build
 * Run npm start
+
+## В проекте использовано:
+* Препроцессор sass для css
+* Pug для html
+* Gulp
+
