@@ -12,6 +12,7 @@ const del = require("del");
 const pump = require("pump");
 const htmlmin = require("gulp-htmlmin");
 const pug = require('gulp-pug');
+const concat = require('gulp-concat');
 
 const uglifyes = require('uglify-es');
 const composer = require('gulp-uglify/composer');
@@ -56,10 +57,8 @@ gulp.task("html", () => {
 gulp.task("js", cb => {
   pump([
         gulp.src("source/js/*.js"),
+        concat('script.min.js'),
         uglify(),
-        rename(function (path) {
-          path.basename += ".min";
-        }),
         gulp.dest("build/js")
       ],
       cb

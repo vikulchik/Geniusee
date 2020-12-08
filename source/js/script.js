@@ -1,1 +1,0 @@
-const RequestUrl = 'https://api.coincap.io/v2/assets/?limit=10'
