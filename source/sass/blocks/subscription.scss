@@ -1,0 +1,55 @@
+.subscription {
+  margin-bottom: 30px;
+
+  &__title {
+    font-weight: 800;
+    color: $white-opacity;
+    font-style: italic;
+    line-height: 25px;
+    margin: 0 0 20px 0;
+  }
+
+  &__form {
+    position: relative;
+  }
+
+  &__field {
+    width: 258px;
+    padding: 14px 119px 14px 19px;
+    background: #FDFFFC;
+    border-radius: 3px;
+    border: none;
+
+    @include placeholder {
+      font-size: 14px;
+      line-height: 16px;
+      color: rgba(62, 61, 61, 0.5);
+    }
+
+    @media screen and (max-width: 768px){
+      padding-right: 90px;
+    }
+  }
+
+  &__submit {
+    padding: 13px 18px;
+    font-family: "Avenir", sans-serif;
+    font-weight: 300;
+    border: none;
+    background: #1768AC;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 18.75px;
+    color: #FFFFFF;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: #0f4a7b;
+      outline: none;
+    }
+  }
+}

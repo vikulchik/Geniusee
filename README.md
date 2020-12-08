@@ -1,4 +1,4 @@
-# Test application for epicentrk.ua
+# Test application for Geniusee
 
 ## Steps to run the project:
 * Clone this repo

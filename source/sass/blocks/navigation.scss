@@ -1,0 +1,17 @@
+.navigation {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 425px){
+    width: 100%;
+  }
+
+  &__link {
+    color: $white-opacity;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

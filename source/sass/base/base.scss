@@ -13,12 +13,12 @@ body, p {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  position: relative;
+  font-family: "Nunito", sans-serif;
 }
 
 a {
   text-decoration: none;
+  display: block;
 }
 
 img {
@@ -34,36 +34,58 @@ ul {
   @include list-reset;
 }
 
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url("../img/main-bg.jpg") no-repeat 0 0;
-  background-size: cover;
-  position: relative;
-  padding: 20% 10% 10% 10%;
+.crypto-description {
+  font-size: 18px;
+  line-height: 37px;
+  letter-spacing: 0.02em;
 
-  @include desktop {
-    padding: 140px 70px 70px 70px;
-    @include center;
+  @media screen and (max-width: 425px){
+    font-size: 16px;
   }
 }
 
-.overlay {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.46);
-  z-index: 4;
+.crypto-title {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 150.04%;
+  color: #076572;
+
+  @media screen and (max-width: 768px){
+    font-size: 30px;
+  }
 }
 
-.popup-cart {
-  display: none;
+.container {
+  max-width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 425px){
+    max-width: none;
+    width: 100%;
+  }
+
 }
 
-.show {
-  display: block;
+.crypto-link {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #333333;
+  width: 147px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  svg {
+    fill: #1991EB;
+  }
+
+  &:hover svg {
+    fill: #F7931A;
+  }
+
+  @media screen and (max-width: 768px){
+    font-size: 20px;
+  }
 }

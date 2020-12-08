@@ -1,0 +1,27 @@
+.socials {
+  margin-bottom: 30px;
+
+  &__title {
+    color: $white-opacity;
+    margin: 0 0 10px 0;
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 89px;
+  }
+
+  &__link {
+    svg {
+      fill: #ffffff;
+      transition: .4s;
+      &:hover,
+      &:active {
+        fill: #F7931A;
+      }
+    }
+  }
+}

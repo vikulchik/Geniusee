@@ -1,0 +1,49 @@
+.crypto-chart {
+  background: #FAFAFA;
+  padding-top: 73px;
+  padding-bottom: 150px;
+
+  @media screen and (max-width: 768px){
+    padding-bottom: 60px;
+  }
+
+  .container {
+    padding-left: 37px;
+    padding-top: 47px;
+
+    @media screen and (max-width: 425px){
+      padding-left: 20px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: url("../img/decorative-dots.png") no-repeat 0 0;
+
+    @media screen and (max-width: 768px){
+      flex-direction: column;
+    }
+  }
+
+  &__section {
+    width: 50%;
+
+    @media screen and (max-width: 768px){
+      width: 100%;
+      &--information {
+        order: -1;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__description {
+    max-width: 519px;
+    margin-bottom: 5px;
+  }
+}

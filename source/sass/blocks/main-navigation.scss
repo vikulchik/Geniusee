@@ -1,0 +1,25 @@
+.main-navigation {
+
+  &__list {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+
+    @media screen and (max-width: 768px){
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 425px){
+      width: 100%;
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+}

@@ -1,0 +1,46 @@
+.intro {
+  min-height: 900px;
+  background: url("../img/intro-bg.png") no-repeat center right;
+  background-size: 65%;
+
+  @media screen and (max-width: 768px){
+    min-height: 600px;
+    background-position: bottom center;
+  }
+
+  @media screen and (max-width: 425px){
+    background-size: 100%;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 102px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin: 0 0 50px 0;
+
+    @media screen and (max-width: 768px){
+      font-size: 35px;
+    }
+
+    @media screen and (max-width: 425px){
+      line-height: 55px;
+    }
+  }
+
+  &__description {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 74px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    width: 50%;
+
+    @media screen and (max-width: 768px){
+      font-size: 20px;
+      line-height: 35px;
+      width: 100%;
+    }
+  }
+}

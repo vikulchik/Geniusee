@@ -1,5 +1,4 @@
-"use strict";
-
+'use strict';
 const gulp = require("gulp");
 const sass = require("gulp-sass");
 const plumber = require("gulp-plumber");

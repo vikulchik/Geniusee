@@ -1,0 +1,18 @@
+.footer {
+  background: #30292F;
+  padding: 32px 0 37px 0;
+
+  &__section {
+    display: flex;
+    justify-content: space-between;
+
+    &--navigation {
+      border-top: 1px solid rgba(218, 218, 218, 0.43);
+      padding-top: 25px;
+    }
+
+    @media screen and (max-width: 425px){
+      flex-direction: column;
+    }
+  }
+}

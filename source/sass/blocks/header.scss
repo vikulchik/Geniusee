@@ -1,0 +1,22 @@
+.header {
+  background: url("../img/header-img.png") no-repeat 0 0;
+  background-size: 100% 100%;
+
+  &__wrapper {
+    max-width: 1255px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 123px;
+
+    @media screen and (max-width: 768px){
+      margin-bottom: 70px;
+      display: block;
+      padding-top: 20px;
+    }
+  }
+}

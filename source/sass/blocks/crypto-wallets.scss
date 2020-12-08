@@ -1,0 +1,74 @@
+.crypto-wallets {
+  position: relative;
+  padding-top: 118px;
+
+  &:before {
+    position: absolute;
+    content: "";
+    background: url("../img/bitcoin.png") no-repeat 0 0;
+    top: 0;
+    left: 0;
+  }
+
+  &__wrapper {
+    background: url("../img/decorative-dots.png") no-repeat top center;
+    padding-bottom: 115px;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      background: url("../img/wallet.png") no-repeat 0 0;
+      top: -10%;
+      right: 0;
+      width: 50%;
+      height: 93%;
+
+      @media screen and (max-width: 768px){
+        top: auto;
+        right: auto;
+        transform: translateX(-50%);
+        width: 153px;
+        height: 110px;
+        background-size: cover;
+        bottom: -3px;
+      }
+    }
+
+    @media screen and (max-width: 768px){
+      text-align: center;
+    }
+  }
+
+  &__title {
+    max-width: 479px;
+    margin: 0 0 40px 0;
+
+    @media screen and (max-width: 768px){
+      width: 100%;
+      max-width: none;
+    }
+  }
+
+  &__description {
+    margin-bottom: 115px;
+
+    @media screen and (max-width: 768px){
+      margin-bottom: 50px;
+      width: 100%;
+    }
+  }
+
+  &__link {
+
+    @media screen and (max-width: 768px){
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  &__table {
+    padding-top: 30px;
+    background: #FAFAFA;
+  }
+}
