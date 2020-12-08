@@ -1,0 +1,31 @@
+.crypto-table {
+  width: 100%;
+  border-collapse: collapse;
+  
+  tbody {
+    background: #fff;
+  }
+
+  &__caption {
+    text-align: start;
+  }
+
+  &__row {
+    border-top: 1px #0000000d solid;
+    border-bottom: 1px  #0000000d solid;
+  }
+
+  &__cell {
+    width: 320px;
+    text-align: start;
+    padding: 20px;
+
+    &--small {
+      width: 127px;
+    }
+  }
+
+  &__data {
+    padding: 40px 20px;
+  }
+}
