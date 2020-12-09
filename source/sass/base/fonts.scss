@@ -4,3 +4,10 @@
   font-weight: 300;
   src: local("avenir"), url("../fonts/Avenir-Light.woff2"), url("../fonts/Avenir-Light.woff");
 }
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 400;
+  src: local("HelveticaNeueCyr"), url("../fonts/HelveticaNeueCyr.woff");
+}

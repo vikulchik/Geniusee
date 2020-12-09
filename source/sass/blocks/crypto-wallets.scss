@@ -1,14 +1,19 @@
 .crypto-wallets {
   position: relative;
   padding-top: 118px;
+  background: url("../img/bitcoin.png") no-repeat -6% -13%;
+  background-size: 45% 45%;
 
-  &:before {
-    position: absolute;
-    content: "";
-    background: url("../img/bitcoin.png") no-repeat 0 0;
-    top: 0;
-    left: 0;
+  @media screen and (max-width: 768px){
+    background-position:  -1% -7%;
+    background-size: 30% 30%;
   }
+
+  @media screen and (max-width: 375px){
+  background-size: 60%;
+}
+
+
 
   &__wrapper {
     background: url("../img/decorative-dots.png") no-repeat top center;
@@ -70,5 +75,16 @@
   &__table {
     padding-top: 30px;
     background: #FAFAFA;
+    padding-bottom: 20%;
+
+    .container {
+      @media screen and (max-width: 425px){
+        padding: 0;
+      }
+
+      @media screen and (max-width: 375px){
+        overflow-x: scroll;
+      }
+    }
   }
 }

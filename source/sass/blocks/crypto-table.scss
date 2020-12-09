@@ -1,8 +1,15 @@
 .crypto-table {
   width: 100%;
   border-collapse: collapse;
-  
-  tbody {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "HelveticaNeueCyr", sans-serif;
+
+  @media screen and (max-width: 375px){
+    width: 500px;
+  }
+
+  tbody, thead {
     background: #fff;
   }
 
@@ -19,13 +26,22 @@
     width: 320px;
     text-align: start;
     padding: 20px;
+    color: #2A2C2E;
 
     &--small {
       width: 127px;
+    }
+
+    @media screen and (max-width: 425px){
+      padding: 5px;
     }
   }
 
   &__data {
     padding: 40px 20px;
+
+    @media screen and (max-width: 425px){
+      padding: 20px 5px;
+    }
   }
 }
