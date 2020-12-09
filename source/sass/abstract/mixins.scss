@@ -4,12 +4,6 @@
   list-style: none;
 }
 
-@mixin center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 @mixin placeholder {
   &::-webkit-input-placeholder {
     @content;
@@ -24,16 +18,3 @@
     @content;
   }
 }
-
-@mixin desktop {
-  @media all and (min-width: $desktop) {
-    @content;
-  }
-}
-
-@mixin mobile {
-  @media all and (min-width: $mobile-big) {
-    @content;
-  }
-}
-
